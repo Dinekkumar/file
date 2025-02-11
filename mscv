@@ -1,0 +1,6 @@
+namespace: ob-sit-ns
+image_name: tsbbuild.jfrog.io/pvs-docker-acceptance/open-banking/pvs_ob_accountconsent
+image_version: "6fa77de"
+healthCheckPath: /account-consent/api/v1/health-check
+configmap:
+  authService.url: "https://stub.sit-openbanking.nonp.aws3.uk.tsb/account-consent/api/v1/mock/auth/"
